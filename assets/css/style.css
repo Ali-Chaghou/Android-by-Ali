@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(252, 70, 107);
+    background: radial-gradient(circle, rgba(252, 70, 107, 1) 8%, rgba(14, 129, 12, 0.3925945378151261) 99%);
+    padding: 1em;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+
+.half-circle,
+.middle,
+.antena1,
+.antena2,
+.leg,
+.leg2,
+.hand,
+.hand2 {
+    background: #00CC33;
+}
+
+.half-circle {
+    position: relative;
+    left: 43%;
+    margin: 15vh 0 0 0;
+    width: 170px;
+    height: 100px;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 90px;
+    border-bottom: 0;
+}
+
+.main:hover .half-circle {
+    transition: 1s ease-in-out 0.5s;
+    transform: scale(1.3, 1.1) translateY(10px);
+}
+
+.antena1,
+.antena2 {
+    width: 6px;
+    height: 40px;
+    border-radius: 3px;
+    z-index: 1;
+}
+
+.antena1 {
+    position: absolute;
+    left: 53.5%;
+    top: 15%;
+    transform: rotate(30deg);
+}
+
+.antena2 {
+    position: absolute;
+    left: 44%;
+    top: 15%;
+    transform: rotate(-30deg);
+}
+
+.main:hover .antena1,
+.main:hover .antena2,
+.main:hover .leg,
+.main:hover .leg2,
+.main:hover .hand,
+.main:hover .hand2 {
+    transition: all 4s ease-out;
+    transform: rotate(1800deg);
+}
+
+.main:hover .circle3,
+.main:hover .circle4 {
+    transition: all 4s ease-in-out;
+    transform: translateY(2px)
+}
+
+.circle1 {
+    position: absolute;
+    right: 47%;
+    top: 20%;
+    width: 1.2em;
+    height: 1.2em;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.circle2 {
+    position: absolute;
+    left: 45%;
+    top: 20%;
+    width: 1.2em;
+    height: 1.2em;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.main:hover .circle1,
+.main:hover .circle2 {
+    transition: all 1s ease 3s;
+    transform: scale(1.7, 1);
+}
+
+.black {
+    align-items: center;
+    width: .5em;
+    height: .5em;
+    background-color: #242;
+    border-radius: 10px;
+}
+
+.middle {
+    position: absolute;
+    left: 43.1%;
+    bottom: 39%;
+    width: 170px;
+    height: 190px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.main:hover .middle {
+    transition: all 2s ease 2s;
+    border-bottom-left-radius: 90px;
+    border-bottom-right-radius: 90px;
+    transform: scale(1.3, 1.1) translateY(-10px);
+}
+
+.leg,
+.leg2 {
+    width: 6px;
+    height: 40px;
+    border-radius: 3px;
+    z-index: 1;
+}
+
+.leg {
+    position: absolute;
+    background-color: #00CC33;
+    left: 45.5%;
+    bottom: 33%;
+}
+
+.leg2 {
+    position: absolute;
+    background-color: #00CC33;
+    left: 52%;
+    bottom: 33%;
+}
+
+.hand,
+.hand2 {
+    width: 6px;
+    height: 40px;
+    border-radius: 3px;
+    z-index: 1;
+}
+
+.hand {
+    position: absolute;
+    background-color: #00CC33;
+    left: 42%;
+    bottom: 50%;
+    transform: rotate(30deg);
+}
+
+.hand2 {
+    position: absolute;
+    background-color: #00CC33;
+    right: 44%;
+    bottom: 50%;
+    transform: rotate(-30deg);
+}
+
+.text {
+    position: absolute;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.5em;
+    top: 8%;
+    left: 43.1%;
+}
+
+footer {
+    position: absolute;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.5em;
+    width: 100vw;
+    bottom: 20%;
+    left: 40%;
+}
+
+footer p {
+    font-size: 1.5em;
+}
+
+footer a {
+    position: absolute;
+    color: #333;
+    left: -70px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #bbdac3;
+    font-size: 1em;
+}
